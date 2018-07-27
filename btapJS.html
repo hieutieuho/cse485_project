@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <title>java script</title>
+    <style>
+        div{
+            border:3px solid lightblue;
+            width:auto;
+            margin:5px 0px;
+            padding:5px;
+        }
+        div p{
+            background-color:lightblue;
+            padding:10px 5px;
+            margin: 5px;
+            color:white;
+        }
+        div h1{
+            margin:5px;
+        }
+        div button{
+            margin:0px 5px 5px 5px;
+        }
+        div input{
+            margin:5px;
+        }
+        .Fruit_container {
+            display:flex;
+            padding:0;
+            height:100vh;
+        }
+        .Fruit_items{
+            margin:0;
+            padding:0;
+            background-color:lightblue;
+            width:50%;
+        }
+        .Fruit_items p{
+            color:black;    
+            font-weight:bold;
+        }
+        li{
+            float:left;
+            margin:0px 20px 0px 5px;
+        }
+    </style>
+    <script>
+        function Func(){
+            document.getElementById("demo").innerHTML = "Goodbye :(";
+        }
+        function Func1() {
+            var x = document.getElementById("Text").value;
+            document.getElementById("WC").innerHTML = "Welcome "+x+"!";
+        }
+        function Func2() {
+            var y = document.getElementById("speed").value;
+            if (y > 60)
+                document.getElementById("SM").innerHTML = "Stop Speeding!";
+            if (y <= 60)
+                document.getElementById("SM").innerHTML = "Countinue Speeding.";
+            if (isNaN(y))
+                document.getElementById("SM").innerHTML = "Wrong Value!";
+            if (y == '')
+                document.getElementById("SM").innerHTML = "Enter Speed Value!";
+        }
+        function Func3() {
+            var z = document.getElementById("FruitName").value;
+            if (z == "apple") {
+                document.getElementById("fruit").src = 'https://www.vaporfi.com.au/media/catalog/product/cache/34/thumbnail/600x600/9df78eab33525d08d6e5fb8d27136e95/v/z/vz_eliquid_juicy_red_apple.jpg';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == "banana") {
+                document.getElementById("fruit").src = 'https://images-na.ssl-images-amazon.com/images/I/71gI-IUNUkL._SY355_.jpg';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == "orange") {
+                document.getElementById("fruit").src = 'http://soappotions.com/wp-content/uploads/2017/10/orange.jpg';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == "mango") {
+                document.getElementById("fruit").src = 'https://www.dontdrinkmyjuice.com/wp-content/uploads/2017/08/meatymango.jpg';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == "grapefruit") {
+                document.getElementById("fruit").src = 'http://gaosachtoanxuan.vn/Uploads/Originals/2016/9/9/20160909112017_buoi-dx.jpg';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == "grape") {
+                document.getElementById("fruit").src = 'https://jmdgv15kxa018mieg2cibjuu-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/grapes-1.png';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == "watermelon") {
+                document.getElementById("fruit").src = 'https://www.naturalfoodseries.com/wp-content/uploads/2017/08/Watermelon-800x416.jpg';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == "peach") {
+                document.getElementById("fruit").src = 'http://sportsvape.net/wp-content/uploads/2014/09/Peach.jpg';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == "kiwi") {
+                document.getElementById("fruit").src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour_edit.jpg/1200px-Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour_edit.jpg';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == "strawberry") {
+                document.getElementById("fruit").src = 'http://www.pioneeregy.com/wp-content/uploads/2017/11/513590708.jpg';
+                document.getElementById("fruit").style.visibility = "visible";
+                document.getElementById("fruit1").style.visibility = "hidden";
+            }
+            else if (z == '') {
+                document.getElementById("fruit1").innerHTML = "Enter fruit name.";
+                document.getElementById("fruit").style.visibility = "hidden";
+                document.getElementById("fruit1").style.visibility = "visible";
+            }
+            else {
+                document.getElementById("fruit1").innerHTML = "We don't have that fruit.";
+                document.getElementById("fruit").style.visibility = "hidden";
+                document.getElementById("fruit1").style.visibility = "visible";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p id="demo">Hello</p>
+        <button onclick="Func()">Change Greeting</button>
+    </div>
+    <div>
+        <h1 id="WC">Welcome</h1>
+        Fist Name:<input id="Text" /><br />
+        <button onclick="Func1()">Welcome User</button>
+    </div>
+    <div>
+        <h1 id="SC">Speed Calculator</h1>
+        Enter Speed: <input id="speed" multiple/><br />
+        <h1 id="SM"></h1>
+        <button onclick="Func2()">Get speed message</button>
+    </div>
+    <div class="Fruit_container">
+        <div class="Fruit_items">
+            <h1>Fruit Entry</h1>
+            Fruit: <input id="FruitName" multiple/><br />
+            <button onclick="Func3()">Show Fruit</button>
+            <h1 style="font-size:20px">Fruit List</h1>
+            <ul id="FruitList:" style="list-style-type:circle">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+                <li>Mango</li>
+                <li>GrapeFruit</li>
+                <li>Grape</li>
+                <li>WaterMelon</li>
+                <li>Peach</li>
+                <li>Kiwi</li>
+                <li>Strawberry</li>
+            </ul>
+        </div>
+        <div class="Fruit_items">
+            <h1>Fruit Display</h1>
+            <p id="fruit1"></p>
+            <img id="fruit" style="max-height:100%;max-width:100%" />
+        </div>
+    </div>
+    
+</body>
+</html>
