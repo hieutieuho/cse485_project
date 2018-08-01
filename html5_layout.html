@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            display:flex;
+            flex-direction:column;
+        }
+        .BGimg{
+            width:100%;
+            position:absolute;
+            z-index:-1;
+            height:475px;
+            filter:brightness(70%);
+        }
+		nav{
+			height:75px;
+		}
+        .navimg {
+            width: 150px;
+            height: auto;
+            margin: 25px;
+            filter: brightness(100%);
+        }
+        nav a{
+            text-decoration:none;
+            color:rgba(255, 255, 255,0.8);
+            padding: 10px;
+            font-weight:bold;
+        }
+        nav a:hover{
+            color:white;
+        }
+        nav div{
+            padding: 40px;
+            float:right;
+        }
+        .home{
+            color:white;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+        .home:hover{
+            background-color:white;
+            color:black;
+        }
+        header {
+            height: 400px;
+            width:100%;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content:center;
+        }
+        header a,p{
+            text-align:center;
+            color:white;
+            margin:10px;
+            text-decoration:none;
+        }
+        .learn{
+            background-color:#36b3a8;
+            padding:10px 20px;
+            border-radius:20px;
+            font-weight:bold;
+        }
+        .learn:hover {
+                background-color: rgba(54, 179, 168,0.8)
+        }
+		section{
+			height:auto;
+			margin:75px 100px; 
+		}
+		footer{
+			height:100px;
+			background-color:black;
+		}
+		section p,h1{
+            color:black;
+            display:flex;
+            justify-content:center;
+			margin: 50px;
+		}
+        section a {
+            text-decoration: none;
+        }
+		section div{
+			height:auto;
+			width:48%;
+            display:inline-block;
+            background-color:rgba(226, 121, 121,0.3)
+		}
+        .divimg{
+            width:100%;
+
+        }
+	</style>
+</head>
+<body >
+    <img class="BGimg" src="C:/Users/hieut/OneDrive/Desktop/nature-scenario_00363511.jpg"/>
+    <nav>
+        <img class="navimg" src="C:/Users/hieut/OneDrive/Desktop/download.png" />
+        <div>
+            <a href="#Home">HOME</a>
+            <a href="#About">ABOUT</a>
+            <a href="#News">NEWS</a>
+            <a href="#Read">READ ME</a>
+            <a href="#TakeAction" class="home" >TAKE ACTION</a>
+        </div>
+    </nav>
+    <header>
+        <p style="font-size:30px">Sustainability</p>
+        <p style="font-size:80px">STARTS WITH YOU</p>
+        <a href="LearnMore" class="learn">LEARN MORE</a>
+    </header>
+	<section>
+        <h1>We conserve land through outreach, restoration, and research.</h1>
+        <p>Some of the Earth's greatest landscapes are threatened by increased road construction, oil<br>
+        and gas exploration, and mining. We aim to protect these areas from inappropriate<br>
+        development, but we cannot achieve our goals alone. Find out how you can help.  </p>
+        <p>All photography provided by <a href="JC"> Jared Chambers</a></p>
+        <div style="float:left">
+            <img class="divimg" src="C:/Users/hieut/OneDrive/Desktop/nature-scenario_00363511.jpg" />
+            <a href="About">ABOUT</a>
+            <p>Find out about our organization, mission, our methods, and the results of our decades of advocacy.</p>
+            <a href="LM">Learn More →</a>
+        </div>
+        <div style="float:right">
+            <img class="divimg" src="C:/Users/hieut/OneDrive/Desktop/tumblr_mn8b8sLRb61rkz363o1_1280.jpg"/>
+            <a href="TakeAction">TAKE ACTION</a>
+            <p>Ready to take the next step? You can become a contributor to our cause, or participate yourself.</p>
+            <a href="FOH">Find Out How →</a>
+        </div>
+	</section>
+	<footer>
+	
+	</footer>
+</body>
+
+</html>
