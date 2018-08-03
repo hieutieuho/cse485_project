@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport", content="width=device-width, initial-scale=1"/>
     <title>Jquery</title>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
             integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
@@ -13,7 +14,9 @@
         // Prevent the form from submitting
         $("form").submit(function (event) {
             event.preventDefault();
-        });</script>
+        });
+        
+        </script>
     <style>
         header {
             height: 100px;
@@ -107,20 +110,21 @@
         <a href="Register">REGISTER</a>
     </nav>
     <section>
-        <form id="Fdiv">
+        <form id="Fdiv" action="javascript:alert( 'success!' )">
             <div style="text-align:center"><h1>ĐĂNG KÝ THÀNH VIÊN</h1></div>
-            <div><p>Tên đăng nhập * : </p><input type="text" /></div>
-            <div><p>Mật khẩu * : </p><input type="password" /></div>
-            <div><p>Xấc nhận mật khẩu * : </p><input type="password" /></div>
-            <div><p>Họ và tên * : </p><input  type="text" /></div>
-            <div><p>Ngày sinh * : </p><input  type="date" style="width:169px" /></div>
-            <div><p>Địa chỉ * : </p><input type="text" /></div>
-            <div><p>Điện thoại * : </p><input type="text" /></div>
-            <div><p>Email * : </p><input type="email" /></div>
-            <div><p>Facebook * : </p><input type="text" /></div>
-            <div><p>Giới tính * : </p><input type="radio" name="gender" value="Nam" style="margin-right:0px;float:none" />Nam
-                               <input type="radio" name="gender" value="Nữ" style="margin-right:0px;float:none"/>Nữ</div>
-            <div><button style="margin-left:40%">Đăng ký</button><input type="reset" value="Làm lại" style="margin-left:5px;float:none" /></div>           
+            <div><p>Tên đăng nhập * : </p><input type="text" required/></div>
+            <div><p>Mật khẩu * : </p><input type="password" required/></div>
+            <div><p>Xấc nhận mật khẩu * : </p><input type="password" required/></div>
+            <div><p>Họ và tên * : </p><input  type="text" required/></div>
+            <div><p>Ngày sinh * : </p><input  type="date" style="width: 177px;" required/></div>
+            <div><p>Địa chỉ * : </p><input type="text" required/></div>
+            <div><p>Điện thoại * : </p><input type="text" required/></div>
+            <div><p>Email * : </p><input type="email" required/></div>
+            <div><p>Facebook * : </p><input type="text" required/></div>
+            <div><p>Giới tính * : </p><input type="radio" name="gender" value="Nam" style="margin-right:0px;float:none" required/>Nam
+                                  <input type="radio" name="gender" value="Nữ" style="margin-right:0px;float:none" required/>Nữ</div>
+            <div><button type="submit" style="float:none;margin:0px 0px 0px 40%">Đăng ký</button>
+                 <input type="reset" value="Làm lại" style="float:none;margin: 0px" /></div>           
         </form>
     </section>
     <footer>
