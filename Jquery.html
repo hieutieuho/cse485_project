@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
+            integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+            crossorigin="anonymous"></script>
+    <script>
+        var input = $(":button").addClass("marked");
+        $("div").text("For this type jQuery found " + input.length + ".");
+        // Prevent the form from submitting
+        $("form").submit(function (event) {
+            event.preventDefault();
+        });</script>
+    <style>
+        header {
+            height: 100px;
+            display: flex;
+        }
+
+            header div {
+                height: 100%;
+            }
+
+        #div1 {
+            background-color: red;
+            width: 30%;
+        }
+
+        #div2 {
+            background-color: yellow;
+            width: 70%;
+        }
+
+        nav {
+            height: 30px;
+            display: flex;
+            background-color: lightpink;
+            justify-content: space-between;
+        }
+
+            nav a {
+                text-decoration: none;
+                margin: 0px;
+                padding: 5px 10px;
+                border: 2px solid black;
+                width: 16%;
+                display: flex;
+                justify-content: center;
+            }
+
+        section {
+            display: flex;
+            height: 600px;
+            background-color: lightblue;
+            justify-content: center;
+        }
+
+        #Fdiv {
+            height: 100%;
+            width: 60%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        section div {
+            background-color: aquamarine;
+            width: 100%;
+            height: 9%;
+        }
+
+            section div input {
+                float: right;
+                margin-right: 200px;
+            }
+
+            section div p {
+                display: inline;
+                margin-left: 200px;
+            }
+
+            section div button {
+                align-self: center;
+            }
+
+        footer {
+            height: 100px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="div1" ></div>
+        <div id="div2" ></div>
+    </header>
+    <nav>
+        <a href="Home">HOME</a>
+        <a href="News">NEWS</a>
+        <a href="Feedback">FEEDBACK</a>
+        <a href="Cart">CART</a>
+        <a href="SignIn">SIGN IN</a>
+        <a href="Register">REGISTER</a>
+    </nav>
+    <section>
+        <form id="Fdiv">
+            <div style="text-align:center"><h1>ĐĂNG KÝ THÀNH VIÊN</h1></div>
+            <div><p>Tên đăng nhập * : </p><input type="text" /></div>
+            <div><p>Mật khẩu * : </p><input type="password" /></div>
+            <div><p>Xấc nhận mật khẩu * : </p><input type="password" /></div>
+            <div><p>Họ và tên * : </p><input  type="text" /></div>
+            <div><p>Ngày sinh * : </p><input  type="date" style="width:169px" /></div>
+            <div><p>Địa chỉ * : </p><input type="text" /></div>
+            <div><p>Điện thoại * : </p><input type="text" /></div>
+            <div><p>Email * : </p><input type="email" /></div>
+            <div><p>Facebook * : </p><input type="text" /></div>
+            <div><p>Giới tính * : </p><input type="radio" name="gender" value="Nam" style="margin-right:0px;float:none" />Nam
+                               <input type="radio" name="gender" value="Nữ" style="margin-right:0px;float:none"/>Nữ</div>
+            <div><button style="margin-left:40%">Đăng ký</button><input type="reset" value="Làm lại" style="margin-left:5px;float:none" /></div>           
+        </form>
+    </section>
+    <footer>
+
+    </footer>    
+</body>
+</html>
